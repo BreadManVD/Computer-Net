@@ -1,0 +1,59 @@
+  4) Virsuniu skaicius: 9
+  5) Pradzios miestas: A
+  6) Keliones tikslas: B
+  7) Vaziuojantis zmogus: v
+
+//Grafas
+  10   20  20
+C----D---G---E   
+|    |       |\
+| 60 | 130   | \  20
+|    |       |  \   
+A    B---H---K   F
+       60  40
+
+ANTRA DALIS. Vykdymas
+
+T = 0
+    Uzdaroma: A
+    Atidaroma: C(60) 
+
+T = 1
+    Uzdaroma: C
+    Atidaroma: D(70) 
+
+T = 2
+    Uzdaroma: D
+    Atidaroma: G(90) B(200) 
+    Rastas kelias i miesta B kaina 200 Eur.
+
+T = 3
+    Uzdaroma: G
+    Atidaroma: E(110) 
+    Rastas kelias i miesta B kaina 200 Eur.
+
+T = 4
+    Uzdaroma: E
+    Atidaroma: F(130) K(140) 
+    Rastas kelias i miesta B kaina 200 Eur.
+
+T = 5
+    Uzdaroma: F
+    Uzdarytu virsuniu nera.
+    Rastas kelias i miesta B kaina 200 Eur.
+
+T = 6
+    Uzdaroma: K
+    Atidaroma: H(160) 
+    Rastas kelias i miesta B kaina 200 Eur.
+
+T = 7
+    Uzdaroma: H
+    Atidaroma: B(190) 
+    Rastas kelias i miesta B kaina 190 Eur.
+
+
+TRECIA DALIS. Rezultatai
+
+  1. Pigiausias kelias: A, C, D, G, E, K, H, B.
+  2. Keliones kaina i miesta B yra 190 Eur.
